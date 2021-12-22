@@ -1,7 +1,21 @@
 body{
-    background-color: #0D0D0D;
     color: #F2F2F2;
+    background: url("imagenes/noun-code-969064.png");
+    background-size: 69px;
+    background-color: #0D0D0D;
+    animation-name: fondo;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
 }
+
+@keyframes fondo{
+    to{
+        background-position:0px -300px;
+    }
+}
+
 
 .neon-button {
     font-size: 4rem;
@@ -60,7 +74,6 @@ body{
 
 @keyframes moverseIzquierda{
     from{
-        display: none;
         right: 0;
     }
 
@@ -71,7 +84,6 @@ body{
 
 @keyframes moverseDerecha{
     from{
-        display: none;
         left: 0;
     }
 
