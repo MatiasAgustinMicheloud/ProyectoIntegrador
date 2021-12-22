@@ -11,11 +11,11 @@
 <body>
     <div class="container">
         <!--Hola!-->
-        <div class="row px-4 py-5 mx-auto vh-100" width="">
+        <div class="row px-4 py-5 mx-auto vh-100" id="hola">
             <div class="col align-self-center text-center">
-                <h1>Hola!</h1>
-                <p>Soy Matias Agustin Micheloud</p>
-                <p>Desarrollador Frond-End</p>
+                <h1 class="texto1">Hola!</h1>
+                <p class="texto2">Soy Matias Agustin Micheloud</p>
+                <p class="texto2">Desarrollador Frond-End</p>
             </div>
         </div>
 
@@ -36,28 +36,38 @@
                 </div>
               </div>
         </div>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
         <!--Redes-->
         <div class="row row px-4 py-5 mx-auto">
             <div class="col align-self-center text-center">
                 <br>
-                <h1>Mi Porfolio</h1>
+                <h2>Mi Porfolio</h2>
                 <br>
                 <img src="imagenes/GitHub-Mark-Light-120px-plus.png" alt="Logo github">
                 <br>
-                <a href="https://github.com/MatiasAgustinMicheloud" class="neon-button">GitHub</a>
+                <a href="https://github.com/MatiasAgustinMicheloud" class="neon-button" target="_blank">GitHub</a>
 
             </div>
         </div>
 
         <!--Contacto-->
         <div class="row row px-4 py-5 mx-auto">
-            <div class="col align-self-center text-center">
-                <h1>Contacto</h1>
-            </div>
+            <h2>Contacto</h2>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="mostrarMensaje()">Enviar</button>
         </div>
+
+        
     </div>
 
     <script src="script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
